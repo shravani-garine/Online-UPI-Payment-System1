@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EZPAY</title>
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<style>
+   .nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #000;
+  background-color: #eee;
+}
+
+.hero-section img{
+  float: right;
+}
+
+.content {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+
+.nav-link:hover {
+  color:#ccc;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+  padding: 10px;
+  flex: 0 1 auto;
+  background-color: #eee;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+body{
+    background-color: rgb(246, 235, 255);
+    display: flex;
+  flex-direction: column;
+  }
+
+
+.container {
+  animation: fade-in 1s ease-in-out;
+}
+.hero-section img {
+  animation: fade-in 1s ease-in-out;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.container h1 {
+  animation: typewriter 1s steps(10);
+}
+#desc{
+  text-align:justify;
+  font-size: 17px;
+  justify-content:center;
+  padding-left: 13.8vw;
+  padding-top: 10vh;
+  padding-right: 47vw;
+  animation: fade-in 1s ease-in-out;
+
+}
+#desc1{
+  text-align:justify;
+  font-size: 17px;
+  justify-content:space-between;
+  padding-left: 13.8vw;
+  padding-right: 47vw;
+  animation: fade-in 1s ease-in-out;
+}
+</style>
+<body>
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="https://thenounproject.com/api/private/icons/4501293/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="" srcset="" width="70px" height="60px">
+      <div style="font-size: 25px;"> EZPAY </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+    <a class="nav-link" href="/login">Login</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="/register">SignUp/Register</a>
+    </li>
+    </ul>
+    </div>
+    </nav> 
+    
+<div class="container mt-5">
+    <h1>Welcome to EZPAY</h1>
+    <p>This is a UPI Payment System</p>
+    </div>
+    <section class="hero-section">
+        <img src="../static/home-banner-img.png" alt="Loading Image" width="650px" height="500px">
+        <p id="desc">EZPay is the best UPI money transfer solution for individuals
+           and businesses alike. It is a secure, fast, and convenient way to send 
+           and receive money using your UPI ID. EZPay supports all major banks
+            and UPI apps, so you can use it to send money to anyone, anywhere in India.
+            EZPay uses the latest security technologies to protect your financial information. You can 
+            send and receive money with confidence, knowing that your data is safe and secure. Money transfers made through EZPay are processed instantly, 
+            so your recipient will receive the money immediately. </p><br>
+        <p id="desc1">EZPay is the perfect UPI money transfer solution for individuals and businesses of all sizes. 
+          It is easy to use, secure, and affordable. Sign up for an account today and start experiencing the benefits of EZPay!</p>
+    </section>
+   
+    <footer class="footer bg-light text-center">
+    <div class="footer">
+    <p>&copy; EZPAY</p>
+</div>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

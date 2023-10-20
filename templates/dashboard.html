@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+    <head>
+        <style>
+            .container{
+                text-align:left;   
+            }
+            
+            .element {
+  animation: move 1s ease-in-out;
+}
+
+@keyframes move {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100px;
+  }
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+h2{
+    text-align: center;
+}
+
+        </style>
+    </head>
+    <body>
+        <h1 id="db">Dashboard</h1>
+        
+            <div class="card mx-auto">
+              <p>Account Balance: Rs.{{ account_balance }}</p> 
+            </div>
+      
+          
+            <div class="card mx-auto">
+                <h3>You can also send money to your contacts</h3>
+                <a href="send_money" class="btn btn-primary">Send Money</a>
+          </div>
+          <div class="card mx-auto">
+            <div class="card-header">
+              <h2>Bank Balance</h2>
+            </div>
+            <div class="card-body">
+                <p>Rs.{{ account_balance }}</p>
+            </div>
+          </div>
+          
+    </body>
+</html>
+
+{% endblock %}

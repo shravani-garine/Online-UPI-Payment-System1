@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EZPAY-Login</title>
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.my-element {
+  animation: fadeIn 1s ease-in-out;
+}
+.container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-group {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.btn-primary {
+  animation: scaleUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+body{
+    background-color: rgb(246, 235, 255);
+}
+.container {
+  background-color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #000000;
+  border-color:#000000;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex ">
+<img src="https://thenounproject.com/api/private/icons/4501293/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="" srcset="" width="70px" height="60px">
+<a class="navbar-brand " href="/"> <div style="font-size: 25px;"> EZPAY </div></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="/register">Register</a>
+</li>
+</ul>
+</div>
+</nav>
+
+<div class="container-fluid" style="height: 80vh; width: 50%;">
+   
+    <div class="container mt-5 gap-5" style="padding: 25px 50px; height: 60vh;">
+    <h2>Login to EZPAY</h2>
+    <form method="post" class="mt-5" action="/login">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="username" class="form-control" id="username" name="username" required>
+            </div>
+    <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+    <input type="password" class="form-control" id="password" name="password" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^\w\s])[a-zA-Z\d\W]+$" title="Atleast One uppercase,One lowercase,digit and special character" required>
+    <div class="links d-flex justify-content-between mt-4">
+        <a href="#">Forgot Password?</a>
+        <a href="/register">Signup/Register</a>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-4">Login</button>
+    </form>
+    </div>
+
+</div>
+<!-- Footer -->
+<footer class="footer bg-light text-center">
+<div class="container">
+<p>&copy; EZPAY </p>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - EZPAY</title>
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  animation: fade-in 1s ease-in-out;
+}
+
+form {
+  margin-top: 20px;
+  animation: fade-in 1s ease-in-out;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #000000;
+  border-color:#000000;
+}
+
+footer {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+.container {
+  animation: fade-in 1s ease-in-out;
+}
+h2{
+    text-align: center;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+body{
+    background-color: rgb(246, 235, 255);
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+  padding: 10px;
+  flex: 0 1 auto;
+  background-color: #eee;
+  padding: 10px;
+}
+form {
+  padding-top: 5vh;
+  width: 85%;
+  margin: 0 auto;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item{
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<img src="https://thenounproject.com/api/private/icons/4501293/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="" srcset="" width="70px" height="60px">
+<a class="navbar-brand d-flex" href="/"> <div style="font-size: 25px;"> EZPAY </div></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/login">Login</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Registration form -->
+<div class="container mt-5 bg-light pt-4 pb-5" style="width: 40%;">
+<h2>Register for EZPAY</h2>
+<form method="post" action="/register" method="post">
+<div class="form-group">
+<label for="username">Name:</label>
+<input type="text" class="form-control" id="username" name="username" required>
+</div>
+<div class="form-group">
+<label for="email">Email:</label>
+<input type="email" class="form-control" id="email" name="email" required>
+</div>
+<div class="form-group">
+<label for="password">Password:</label>
+<input type="password" class="form-control" id="password" name="password" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^\w\s])[a-zA-Z\d\W]+$" title="Atleast One uppercase,One lowercase,digit and special character" required>
+</div>
+<button type="submit" class="btn btn-primary">Register</button>
+</form>
+</div>
+<!-- Footer -->
+<footer class="footer bg-light text-center">
+<div class="container">
+<p>&copy; EZPAY</p>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

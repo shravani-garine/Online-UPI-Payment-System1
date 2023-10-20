@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <style>
+        body{
+          background-color: rgb(246, 235, 255);
+        }
+        button{
+          padding-bottom: 2vh;
+        }
+        .container{
+          justify-content: center;
+        }
+    </style>
+  </head>
+  <body>
+    {% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid" style="height: 80vh; width: 50%;">
+  <div class="container mt-5 bg-light pt-4 pb-5;">
+<h2>Send Money to Contacts</h2>
+<form method="post" action="/send_money" >
+<div class="form-group">
+<label for="contact">Select Contact:</label>
+<select class="form-control" id="contact" name="contact_id" required>
+<option value="3">Contact 1</option>
+<option value="4">Contact 2</option>
+
+</select>
+</div>
+<div class="form-group">
+<label for="amount">Amount:</label>
+<input type="number" class="form-control" id="amount" name="amount" required>
+</div>
+<div class="form-group">
+<label for="description">Description:</label>
+<textarea class="form-control" id="description" name="description" rows="3"></textarea>
+</div>
+<div class="form-group">
+  <label for="account_number">Account Number:</label>
+  <input type="text" class="form-control" id="account_number" name="account_number" required>
+</div>
+<button type="submit" class="btn btn-success mt-5" style="background-color: black;">Send Money</button>
+</form>
+</div>
+</div>
+{% endblock %}
+  </body>
+</html>
